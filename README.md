@@ -1,2 +1,2 @@
-# CFDyn
-Practice
+# CFDash
+classic FVM implementation & OpenFOAM practices 
