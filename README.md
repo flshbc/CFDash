@@ -1,2 +1,7 @@
 # CFDash
-classic FVM implementation & OpenFOAM practices 
+typical FVM implementations: 
+
+
+OpenFOAM practices:
+
+
