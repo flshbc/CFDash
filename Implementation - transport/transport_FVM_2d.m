@@ -10,13 +10,13 @@
 close all;clear;clc;
 %% GE
 rho = 1; % density
-u = 10; % velocity (forced convection), stands for Pe
-v = 5;
+u = 1000; % velocity (forced convection), stands for Pe
+v = 100;
 Lx = 1;       % domain size
 Ly = 1;
-gamma = 1;  % diffusive coefficient
+gamma = 1;  % diffusive coexfficient
 %% scheme
-conv='linear'; %linear or upwind
+conv='upwind'; %linear or upwind
 %% geo
 Nx = 40;      % Number of cells
 Ny = 40;

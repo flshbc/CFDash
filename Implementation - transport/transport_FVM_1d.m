@@ -75,7 +75,7 @@ fprintf('%.4f (linear), %.4f (upwind).\n',order_linear,order_upwind);
 
 %% ssst_eq_1d: FVM solver for 1D steady-state scalar transport equation
 % flshbc @ Github | Spring 2025 | Implementation
-% Associated file: fvm1dtransport.m
+% Associated file: transport_FVM_1d.m
 %% declaration
 function [phi,Pe,dx,xm] = ssst_eq_1d(rho,u,L,gamma,N,phi_0,phi_L,bc,interp)
 % u: constant velocity
