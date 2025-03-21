@@ -10,7 +10,7 @@ close all;clear;clc;
 %% GE
 rho = 1; % density of fluid
 L = 1; % length of the region
-gamma = 1; % convection coefficient
+gamma = 1; % diffusion coefficient
 % u: constant velocity, used to control Pe
 % N: number of cells
 %% BC

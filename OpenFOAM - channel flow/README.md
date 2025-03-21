@@ -1,17 +1,17 @@
 ## specification
 
-- DNS simulation of laminar channel flow
-- Re = 200
+- DNS (laminar) simulation of laminar channel flow
+- case preset Re = 200
 - from uniform inflow to fully-developed laminar profile
 
 ## manipulation
 3D mesh 50\*25\*1
 
-Solve with `icoFoam`, the incompressible flow solver which gives transient results
+Solve with `icoFoam`, the incompressible (laminar) flow solver for transient results
 
-increase  timestep `deltaT = 0.02`  to check stability condition
+Increase  timestep `deltaT = 0.02`  to check stability condition
 
-## operation
+## command
 
 **OpenFOAM**
 

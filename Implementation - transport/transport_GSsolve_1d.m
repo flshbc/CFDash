@@ -12,15 +12,15 @@ close all;clear;clc;
 %% GE
 rho = 1; % density of fluid
 L = 1; % length of the region
-gamma = 1; % convection coefficient
+gamma = 1; % diffusion coefficient
 % u: constant velocity, used to control Pe
 % N: number of cells
 %% BC
 phi_0 = 0;
 phi_L = 1;
 %% construting & solving - matlab
-u_test = 20;
-N_test = 100;
+u_test = 40;
+N_test = 40;
 fprintf('single case: N = %d, Pe = %.2f.\n',N_test,u_test);
 [phi_linear,Pe,dx,xm,A,Q] = ssst_eq_1d(rho,u_test,L,gamma,N_test,phi_0,phi_L,'linear-2nd','linear');
 %[phi_upwind,~,~,~,A2,Q2] = ssst_eq_1d(rho,u_test,L,gamma,N_test,phi_0,phi_L,'upwind-2nd','upwind');
@@ -73,7 +73,8 @@ xlabel('number of iteration'); ylabel('residual');
 legend('under relaxtion','\default','over relaxation');
 
 %% ssst_eq_1d: FVM solver(construction) for 1D steady-state scalar transport equation
-% Associated file: transport_GSsolve_1d.m
+% Associated file: transport_GSsolve_1d.m 
+% Modified to deliver A,Q for manual solving
 %% declaration
 function [phi,Pe,dx,xm,A,Q] = ssst_eq_1d(rho,u,L,gamma,N,phi_0,phi_L,bc,interp)
 % u: constant velocity
@@ -145,6 +146,7 @@ end
 
 %% GSsolve: Gauss-Seidel method with relaxation
 % Associated file: transport_GSsolve_1d.m
+% Take the linear equations and solve it manually
 %% declaration
 function [phi_gs,iter,res,err] = GSsolve(N,A,Q,itermax,conv_abs_res,w,exact_sol)
 % N: Dimension of unknown phi

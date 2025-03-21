@@ -14,7 +14,7 @@ u = 1000; % velocity (forced convection), stands for Pe
 v = 100;
 Lx = 1;       % domain size
 Ly = 1;
-gamma = 1;  % diffusive coexfficient
+gamma = 1;  % diffusive coefficient
 %% scheme
 conv='upwind'; %linear or upwind
 %% geo
