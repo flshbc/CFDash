@@ -1,22 +1,13 @@
 # CFDash
 
-## Typical computational implementations: 
+## Prototypical OpenFOAM Practices
 
-### section 1: diffusion (heat equation)
-- 1D diffusion
+1. Lid-Driven Cavity Flow
 
-- steady-state multi-layer diffusion
+2. Channel Flow
 
-### section 2: convection-diffusion (scalar transport)
+3. Flow Past Square
 
-- 1D steady-state transport
+4. Backward Facing Step
 
-- 2D steady-state transport 
-
-- Gauss-Seidel method with relaxation
-
-
-## OpenFOAM practices
-
-- laminar channel flow
-
+5. Flow Past Cylinder
